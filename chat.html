@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: #fff;
+            animation: gradientAnimation 10s infinite alternate;
+        }
+
+        #chat-container {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #messages-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .bot-message {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        /* Animation */
+        @keyframes gradientAnimation {
+            from {
+                background-position: 0%;
+            }
+            to {
+                background-position: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <ul id="messages-list"></ul>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const inputElement = document.getElementById('message-input');
+            const message = inputElement.value.trim();
+
+            if (message !== '') {
+                const messagesList = document.getElementById('messages-list');
+
+                // Add user's message
+                const userMessage = document.createElement('li');
+                userMessage.textContent = `You: ${message}`;
+                userMessage.classList.add('message', 'user-message');
+                messagesList.appendChild(userMessage);
+
+                // Clear the input field
+                inputElement.value = '';
+
+                // Scroll to the bottom of the chat container
+                document.getElementById('chat-container').scrollTop = document.getElementById('chat-container').scrollHeight;
+
+                // Simulate a bot response after a short delay
+                setTimeout(() => {
+                    const botMessage = document.createElement('li');
+                    botMessage.textContent = `Bot: ${getBotResponse(message)}`;
+                    botMessage.classList.add('message', 'bot-message');
+                    messagesList.appendChild(botMessage);
+
+                    // Scroll to the bottom again
+                    document.getElementById('chat-container').scrollTop = document.getElementById('chat-container').scrollHeight;
+                }, 500);
+            }
+        }
+
+        function getBotResponse(userMessage) {
+            // You can customize this function to provide different responses based on user input
+            if (userMessage.toLowerCase().includes('hello') || userMessage.toLowerCase().includes('hi')) {
+                return 'Hello! How can I help you today?';
+            } else if (userMessage.toLowerCase().includes('how are you')) {
+                return 'I am just a bot, but thanks for asking!';
+            } else {
+                return 'I didn\'t quite understand that. Feel free to ask me anything else!';
+            }
+        }
+    </script>
+</body>
+</html>

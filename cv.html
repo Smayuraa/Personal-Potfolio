@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download CV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #download-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+            animation: fadeIn 1s ease-out;
+        }
+
+        #download-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="download-container">
+        <h1>Download My CV</h1>
+        <a id="download-button" href="Resume College.pdf" download="your_cv.pdf">Download CV</a>
+    </div>
+</body>
+</html>

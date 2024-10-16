@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversation Bot</title>
+  <link rel="stylesheet" href="talk.css">
+  <!-- Add Russo One font to your <head> -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Back Button -->
+    <button id="backButton" class="back-btn">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    
+    <!-- Help section -->
+    <div class="help-section">
+      <button class="help-btn">Help</button>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-bubble bot">Hello! You can ask questions about me.</div>
+    </div>
+
+    <!-- Tag container -->
+    <div class="tag-container">
+      <div class="tag" onclick="handleTagClick('hi')">Hi</div>
+      <div class="tag" onclick="handleTagClick('skills')">Skills</div>
+      <div class="tag" onclick="handleTagClick('projects')">Projects</div>
+      <div class="tag" onclick="handleTagClick('college')">College</div>
+      <div class="tag" onclick="handleTagClick('cgpa')">CGPA & Scholarship</div>
+      
+      <!-- New Tags -->
+      <div class="tag" onclick="handleTagClick('internship')">Internship Experience</div>
+      <div class="tag" onclick="handleTagClick('resume')">Resume</div>
+      <div class="tag" onclick="handleTagClick('future plans')">Future Plans</div>
+      <div class="tag" onclick="handleTagClick('portfolio')">Portfolio</div>
+      <div class="tag" onclick="handleTagClick('career')">Career Aspirations</div>
+      <div class="tag" onclick="handleTagClick('hobbies')">Hobbies</div>
+      <div class="tag" onclick="handleTagClick('email')">My Email</div>
+    </div>
+  </div>
+  
+  <script src="talk.js"></script>
+  
+  <!-- Back Button JavaScript -->
+  <script>
+    document.getElementById('backButton').addEventListener('click', function() {
+      window.location.href = '/'; // Redirect to the homepage (adjust URL if needed)
+    });
+  </script>
+</body>
+</html>
