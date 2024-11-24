@@ -44,11 +44,4 @@ Feel free to connect with me or reach out for collaboration opportunities!
 - **GitHub**: [github.com/Smayuraa](https://github.com/Smayuraa)
 - **LinkedIn**: [linkedin.com/in/mayuri-sharma-12345](https://www.linkedin.com/in/mayuri-sharma-12345)
 - **Portfolio**: [mayurisharma-portfolio.netlify.app](https://mayurisharma-portfolio.netlify.app/)
-
-  ![Image Alt Text](./assest/1.png)
   
-
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
