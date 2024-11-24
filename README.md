@@ -16,7 +16,7 @@ I'm currently a **B.Tech Computer Engineering student** with a focus on **Full S
 
 ## Projects
 
-### 1. [Spotify Web Player]
+### 1. Spotify Web Player
 - **Technologies**: HTML, CSS, JavaScript
 - A clone of the Spotify web player featuring responsive design and a modern user interface.
 
@@ -42,6 +42,6 @@ Feel free to connect with me or reach out for collaboration opportunities!
 
 - **Email**: [mayurisharma2003@gmail.com](mailto:mayurisharma2003@gmail.com)
 - **GitHub**: [github.com/Smayuraa](https://github.com/Smayuraa)
-- **LinkedIn**: [linkedin.com/in/mayuri-sharma-12345](https://www.linkedin.com/in/mayuri-sharma-12345)
+- **LinkedIn**:[linkedin.com/in/sharma-mayuri-abc12](https://www.linkedin.com/in/sharma-mayuri-abc12)
 - **Portfolio**: [mayurisharma-portfolio.netlify.app](https://mayurisharma-portfolio.netlify.app/)
   
